@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
-Very dark cyan: hsl(179, 100%, 13%)
+Very dark cyan:
 
 ### Neutral
 
@@ -34,38 +34,90 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 - Family: [Big Shoulders Display]()
 - Weights: 700 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    font-family:  'Big Shoulders Display';
+    font-family: 'Big Shoulders Display';
     font-weight: 700;
 }
-.container-fluid{
+
+.container-fluid {
     display: flex;
     padding: 30px;
     justify-content: center;
     border-radius: 10px;
 }
-.card{
+
+.card {
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
-    padding: 0 60px;
+    padding: 20px 60px;
     margin: 50px 0;
-    font-family: "Lexend Deca";
 }
-.card_img{
-    margin: 30px 0;
+
+.card_img {
+    margin: 20px 0;
 }
-.card_text h1{
+
+.card_text h1 {
     text-transform: uppercase;
     font-weight: bold;
     margin: 40px 0;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
 
+.card_text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+}
+
+.card_btn button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(31, 77%, 52%);
+    padding: 20px 40px;
+    margin-bottom: 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 0;
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+.card_btn button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.first_card{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;  
+}
+.sec_card {
+    background-color: hsl(184, 100%, 22%);
+}
+.card_btn .sec_btn {
+    color: hsl(184, 100%, 22%);
+}
+.third_card{
+    background-color:  hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.card_btn .third_btn{
+    color:  hsl(179, 100%, 13%);
 }
