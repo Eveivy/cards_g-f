@@ -51,9 +51,8 @@ body {
 
 .container-fluid {
     display: flex;
-    padding: 30px;
+    padding: 0 40px;
     justify-content: center;
-    border-radius: 10px;
 }
 
 .card {
@@ -70,7 +69,7 @@ body {
 .card_text h1 {
     text-transform: uppercase;
     font-weight: bold;
-    margin: 40px 0;
+    margin: 50px 0;
     font-size: 2rem;
     color: hsl(0, 0%, 95%);
 }
@@ -80,7 +79,7 @@ body {
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 1.2rem;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .card_btn button {
@@ -88,7 +87,6 @@ body {
     border: none;
     color: hsl(31, 77%, 52%);
     padding: 20px 40px;
-    margin-bottom: 90px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -120,4 +118,24 @@ body {
 }
 .card_btn .third_btn{
     color:  hsl(179, 100%, 13%);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: center;
+}
+@media screen and (max-width: 780px){
+    .container-fluid{
+        flex-direction: column-reverse;
+    }
+    .card{
+        margin: 10px 0;
+    }
+    .container{
+        grid-template-columns: repeat(1, 100%);
+        padding: 20px;
+    }
+    .first_card, .sec_card, .third_card{
+        border-radius: 10px;
+    }
 }
